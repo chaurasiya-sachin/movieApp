@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎥 Movie Search App</h1>
+        <input type="text" id="search-input" placeholder="Search for movies...">
+        <div id="loading-spinner" class="hidden"></div>
+       
+    </header>
+    <main>
+        <section id="movie-container" class="movie-grid">
+            <!-- Movie cards will be dynamically added here -->
+        </section>
+        <div id="pagination" class="pagination hidden">
+            <button id="prev-page" class="page-btn" disabled>Previous</button>
+            <span id="page-info">Page 1</span>
+            <button id="next-page" class="page-btn">Next</button>
+        </div>
+    </main>
+    <div id="details-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <div id="details-container"></div>
+        </div>
+    </div>
+    <button id="scroll-to-top" title="Go to top">↑</button>
+    <footer>
+        <p>Created by <strong>Sunny Kumar</strong></p>
+        <p>
+            <a href="https://www.linkedin.com/in/sunny-kumar-coder/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/SunnyKumar-code" target="_blank">GitHub</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
